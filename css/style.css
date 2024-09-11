@@ -146,17 +146,89 @@ h4 {
   margin-bottom: 1.5rem;
 }
 
-aside > p {
+aside > div p {
   color: #732104;
 }
 
-aside > img {
+aside > div img {
   margin-block: 2rem;
   width: 100%;
 }
 
 /* tablet */
-@media screen and(min-width: 767px ) {
+@media screen and (min-width: 767px) {
+  /* header */
+  nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 18vh;
+  }
+  .big {
+    order: 0;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .small {
+    vertical-align: middle;
+    margin-top: 3rem;
+  }
+
+  .a-small {
+    width: 160px;
+    padding-block: 1.5rem;
+  }
+
+  .main-button {
+    margin-top: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  section {
+    width: 50%;
+  }
+
+  section:last-child {
+    display: none;
+  }
+
+  /* main */
+  .flex > div {
+    width: 100%;
+  }
+
+  main > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* aside */
+  h2 {
+    text-align: start;
+    margin-left: 2rem;
+  }
+
+  aside {
+    width: 90%;
+  }
+
+  aside > div {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  aside > div p {
+    color: #732104;
+  }
+
+  aside > div img {
+    width: 100%;
+    margin-block: 2rem;
+  }
 }
 
 /* medium */
