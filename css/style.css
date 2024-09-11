@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > div {
+  background-color: #ffdf7f;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  row-gap: 1rem;
+}
+
+.main-button {
+  flex-grow: 3;
+}
